@@ -7,19 +7,34 @@
 
   <body>
     <style>
+    
+    body {margin:0;}
+    h1 {color:pink; text-align:center; margin:0; padding:40px; border-bottom:solid 1px gray;}
     a {color :pink; text-decoration: none}
+
+    #grid {display:grid; grid-template-columns:1fr 2fr;}
+    #grid img {border: 1px white solid; margin-left:30px;}
+    #grid h2 {margin:0; padding:30px; text-align:right; margin-right:30px; border-right:solid 1px gray;}
+    #grid p {margin:0; padding:30px;}
+
     </style>
 
-    <a href="index.html" style="color:skyblue; text-align:center;"><h1>zozeland</h1></a>
+    <a href="index.html"><h1>zozeland</h1></a>
 
-    <ul>
-      <li>about me</li>
-        <p> 조정민. 1997년 9월 9일 출생, 현실적인 몽상가. <br>
-          성균관대학교 시스템경영공학과를 졸업 예정입니다. <br>
-          <a style="text-decoration: underline" href="https://instagram.com/a_i_siteru" target="_blank" title="바로가기">인스타그램</a>
-        </p>
-    </ul>
-    <img src="jeongmin.jpg" width="100%">
+    <div id=grid>
+        <h2>about me</h2>
+        <div>
+          <p> 조정민. 1997년 9월 9일 출생, 현실적인 몽상가. <br>
+            성균관대학교 시스템경영공학과를 졸업 예정입니다. <br>
+            <a style="text-decoration: underline"
+            href="https://instagram.com/a_i_siteru" target="_blank" title="바로가기">
+            인스타그램</a>
+          </p>
+          <img src="jeongmin.jpg" width="400" >
+        </div>
+    </div>
+
+
 
   </body>
 </html>
